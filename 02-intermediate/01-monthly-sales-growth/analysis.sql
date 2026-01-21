@@ -1,4 +1,3 @@
-sql
 WITH monthly_sales AS (
     -- STEP 1: Aggregate sales by month and category
     SELECT 
