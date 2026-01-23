@@ -43,7 +43,8 @@ SELECT
 FROM employees emp
 JOIN employees mgr ON emp.manager_id = mgr.id
 WHERE emp.salary > mgr.salary;
-📊 Sample OutputIn this dataset, the "Star Employee" earns 80k while their manager only earns 70k, and the "Senior Tech" out-earns Manager A.employee_nameemployee_salarymanager_namemanager_salaryStar Employee80000Manager B70000Senior Tech95000Manager A90000⚙️ Setup (Reproduce this Analysis)If you want to run this query, use the following SQL schema:SQL-- Create Table
+📊 Sample OutputIn this dataset, the "Star Employee" earns 80k while their manager only earns 70k, and the "Senior Tech" out-earns Manager A.employee_nameemployee_salarymanager_namemanager_salaryStar Employee80000Manager B70000Senior Tech95000Manager A90000⚙️ Setup (Reproduce this Analysis)If you want to run this query, use the following SQL schema:SQL
+
 CREATE TABLE employees (
     id SERIAL PRIMARY KEY,
     name VARCHAR(50),
