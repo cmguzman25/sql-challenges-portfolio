@@ -53,6 +53,12 @@ SELECT
 FROM ranked_employees
 WHERE ranking <= 3;
 📊 Sample OutputNotice how in Engineering, Carlos and Ana are tied for 1st place, and Pedro is correctly ranked 2nd.departmentemployeesalaryrankingEngineeringCarlos900001EngineeringAna900001EngineeringPedro850002EngineeringSofia800003Human ResourcesLaura500001Human ResourcesRoberto480002SalesLuis600001SalesMaria580002SalesJorge550003⚙️ Setup (Reproduce this Analysis)If you want to run this query, use the following SQL schema:SQL-- Create Tables
+
+DROP TABLE IF EXISTS departments;
+DROP TABLE IF EXISTS employees;
+
+
+
 CREATE TABLE departments (
     id SERIAL PRIMARY KEY,
     name VARCHAR(50)
